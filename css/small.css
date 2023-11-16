@@ -1,0 +1,99 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*  apply a natural box layout model to all elements  */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+:root {
+  --yinmn-blue: #3d5a80;
+  --powder-blue: #98c1d9;
+  --light-cyan: #e0fbfc;
+  --burnt-sienna: #ee6c4d;
+  --gunmetal: #293241;
+}
+
+body {
+  text-align: center;
+}
+header {
+  background-color: var(--gunmetal);
+  color: var(--powder-blue);
+  margin: 0;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+header i {
+  width: 2rem;
+  cursor: pointer;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+.grid figure {
+  background-color: var(--yinmn-blue);
+  margin: 0.5rem 2%;
+  padding: 0.5rem;
+  flex-basis: 96%;
+  border-radius: 10px;
+  box-shadow: 0px 3px 10px #0F1A20;
+  width: 100%;
+}
+.grid h2 {
+  color: var(--light-cyan)
+}
+.grid figcaption {
+  color: var(--powder-blue);
+  padding: 0.5rem
+}
+.grid img {
+  width: 100%;
+}
+.grid figcaption span {
+  color: var(--burnt-sienna);
+  font-variant: small-caps;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+}
+.list figure {
+  background-color: var(--yinmn-blue);
+  margin: 0.5rem 2%;
+  padding: 0.5rem;
+  flex-basis: 96%;
+  border-radius: 10px;
+  box-shadow: 0px 3px 10px #0F1A20;
+  display: flex;
+  flex-direction: column;
+}
+.list div {
+  display: flex;
+}
+.list img {
+  width: 20%;
+  height: auto;
+}
+.list h2 {
+  color: var(--light-cyan);
+  text-align: left;
+}
+.list figcaption {
+  color: var(--powder-blue);
+  padding: 0.5rem;
+  text-align: left;
+}
+.list figcaption span {
+  color: var(--burnt-sienna);
+  font-variant: small-caps;
+  align-items: stretch;
+}
+
+footer {
+  padding: 1.5rem;
+}
